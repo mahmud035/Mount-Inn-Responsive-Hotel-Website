@@ -352,7 +352,69 @@ header .header-content {
 /* Packages */
 .package-section {
   background-color: var(--bg-color2);
-  padding: 6rem 0;
+  padding: 6rem 0 12rem;
+}
+
+.package-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.package {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--bg-color);
+}
+
+.package-img,
+.package-content {
+  flex: 1;
+}
+
+.package-img {
+  position: relative;
+}
+
+.package-img img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  filter: blur(0.7px);
+}
+
+.package-img .img-text {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  padding: 16px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.package-content {
+  padding-left: 2rem;
+}
+
+.package-content h3 {
+  font-size: 28px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.package-content p {
+  padding: 1.5rem 0;
+}
+
+.package-content .package-icons {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.package-icons img {
+  width: 28px;
+  height: 28px;
 }
 
 /* Query & Booking  */
@@ -374,6 +436,7 @@ header .header-content {
   background-color: var(--bg-color3);
   padding: 3rem 2.5rem;
   border-radius: 8px;
+  margin-top: -11rem;
 }
 
 .query-content h2 {
