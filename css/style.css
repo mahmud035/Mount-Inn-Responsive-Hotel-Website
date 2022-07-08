@@ -277,8 +277,8 @@ header .header-content {
 /* Background image with Summer  */
 
 .luxury-summer-container {
-  /* padding: 6rem 0; */
-  height: 400px;
+  padding: 7rem 0;
+  height: 420px;
   background-image: url('../images/bg-2.jpg');
   /* INFO: Image dimensions is so big: 4853*3235. So there is no need of (no-repeat) */
   background-position: center center;
@@ -313,4 +313,35 @@ header .header-content {
   padding: 2rem 0;
   line-height: 30px;
   max-width: 90%;
+}
+
+/* Gallery */
+.gallery-section-container {
+  padding: 6rem 0;
+}
+
+.gallery-container {
+  padding: 1rem 0 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  /* justify-content: center; */
+  justify-items: center;
+  align-items: center;
+}
+
+.photo img {
+  width: 280px;
+  height: 280px;
+  border-radius: 8px;
+  object-fit: cover;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.photo:hover img {
+  /* INFO: 3d transform effect */
+  will-change: transform;
+  transform: perspective(1000px) rotateX(-4.8deg) rotateY(-10.23deg)
+    scale3d(1.05, 1.05, 1.05);
 }
