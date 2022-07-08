@@ -345,3 +345,35 @@ header .header-content {
   transform: perspective(1000px) rotateX(-4.8deg) rotateY(-10.23deg)
     scale3d(1.05, 1.05, 1.05);
 }
+
+/* Footer */
+footer {
+  background-color: var(--bg-color3);
+  color: var(--text-color);
+  padding: 3rem 1rem;
+}
+
+.footer-section-container {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
