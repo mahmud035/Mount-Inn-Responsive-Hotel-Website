@@ -273,3 +273,44 @@ header .header-content {
 .amenity-photo:hover img {
   transform: scale(1.05);
 }
+
+/* Background image with Summer  */
+
+.luxury-summer-container {
+  /* padding: 6rem 0; */
+  height: 400px;
+  background-image: url('../images/bg-2.jpg');
+  /* INFO: Image dimensions is so big: 4853*3235. So there is no need of (no-repeat) */
+  background-position: center center;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.2);
+  background-blend-mode: overlay;
+}
+
+.summer-content {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.summer-text {
+  flex: 2;
+  color: var(--text-color);
+}
+
+.summer-btn {
+  flex: 1;
+}
+
+.summer-text h2 {
+  font-size: 2.5rem;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.summer-text p {
+  padding: 2rem 0;
+  line-height: 30px;
+  max-width: 90%;
+}
