@@ -349,6 +349,12 @@ header .header-content {
     scale3d(1.05, 1.05, 1.05);
 }
 
+/* Packages */
+.package-section {
+  background-color: var(--bg-color2);
+  padding: 6rem 0;
+}
+
 /* Query & Booking  */
 .query-booking-section-container {
   padding: 6rem 0 8rem;
