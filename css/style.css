@@ -69,6 +69,18 @@ body {
   margin-inline: auto;
 }
 
+.heading h2 {
+  font-size: 3rem;
+  font-family: 'Quicksand', sans-serif;
+  color: #0a0a0a;
+  text-align: center;
+}
+
+.heading p {
+  padding: 2rem 0 4rem;
+  text-align: center;
+}
+
 /* -----Header----- */
 header {
   height: 100vh;
@@ -151,4 +163,49 @@ header .header-content {
 
 .btn:hover {
   background: var(--link-hover-color);
+}
+
+/* About Us */
+.about-section-container {
+  padding: 6rem 3rem;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.about-img,
+.about-text {
+  flex: 1;
+}
+
+.about-img img {
+  max-width: 600px;
+  height: auto;
+  border-radius: 8px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.about-img:hover img {
+  transform: scale(1.05);
+}
+
+.about-text h3 {
+  font-size: 28px;
+  color: #0a0a0a;
+  font-family: 'Quicksand', sans-serif;
+  padding-bottom: 1rem;
+}
+
+.about-text .para1 {
+  padding: 1rem 0 1.5rem;
+  line-height: 30px;
+  font-weight: 600;
+}
+
+.about-text .para2 {
+  line-height: 30px;
 }
