@@ -167,7 +167,7 @@ header .header-content {
 
 /* About Us */
 .about-section-container {
-  padding: 6rem 3rem;
+  padding: 6rem 0;
 }
 
 .about-content {
@@ -208,4 +208,14 @@ header .header-content {
 
 .about-text .para2 {
   line-height: 30px;
+}
+
+/* Amenities */
+.amenities-section-container {
+  padding: 6rem 3rem;
+}
+
+.icon-card img {
+  width: 70px;
+  height: 70px;
 }
