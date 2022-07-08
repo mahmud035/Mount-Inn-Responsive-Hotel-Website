@@ -88,7 +88,8 @@ header {
   background: url('../images/bg-1.jpg') no-repeat;
   background-position: center center;
   background-size: cover;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-attachment: fixed;
+  background-color: rgba(0, 0, 0, 0.6);
   background-blend-mode: overlay;
   position: relative;
 }
@@ -283,6 +284,7 @@ header .header-content {
   /* INFO: Image dimensions is so big: 4853*3235. So there is no need of (no-repeat) */
   background-position: center center;
   background-size: cover;
+  background-attachment: fixed;
   background-color: rgba(0, 0, 0, 0.2);
   background-blend-mode: overlay;
 }
