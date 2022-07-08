@@ -60,6 +60,7 @@ select {
 body {
   font-family: 'Quicksand', sans-serif;
   font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
 }
 
 /* Common CSS Classes */
@@ -212,10 +213,57 @@ header .header-content {
 
 /* Amenities */
 .amenities-section-container {
-  padding: 6rem 3rem;
+  padding: 6rem 0;
+}
+
+.icon-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
+  /* justify-content: center; */
+  justify-items: center;
+  align-items: center;
 }
 
 .icon-card img {
   width: 70px;
   height: 70px;
+  margin-inline: auto;
+}
+
+.icon-card p {
+  padding-top: 10px;
+}
+
+.amenities-photo-container {
+  padding: 5rem 0 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  /* justify-content: center; */
+  justify-items: center;
+  align-items: center;
+}
+
+.amenity-photo {
+  position: relative;
+  color: white;
+  cursor: pointer;
+}
+
+.amenity-photo .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.amenity-photo img {
+  width: 300px;
+  height: 300px;
+  border-radius: 8px;
+  object-fit: cover;
+  filter: blur(0.3px);
 }
