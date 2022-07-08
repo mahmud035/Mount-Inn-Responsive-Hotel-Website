@@ -154,6 +154,7 @@ header .header-content {
 }
 
 .btn {
+  display: inline-block;
   color: #000;
   background: var(--link-color);
   padding: 18px 32px;
@@ -346,6 +347,72 @@ header .header-content {
   will-change: transform;
   transform: perspective(1000px) rotateX(-4.8deg) rotateY(-10.23deg)
     scale3d(1.05, 1.05, 1.05);
+}
+
+/* Query & Booking  */
+.query-booking-section-container {
+  padding: 6rem 0 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.query-content,
+.booking-content {
+  flex: 1;
+  height: 100%;
+}
+
+.query-content {
+  background-color: var(--bg-color3);
+  padding: 3rem 2.5rem;
+  border-radius: 8px;
+}
+
+.query-content h2 {
+  color: var(--text-color);
+  font-size: 3rem;
+  font-family: 'Quicksand', sans-serif;
+  padding-bottom: 1.5rem;
+}
+
+.query-content form input[type='text'],
+.query-content form input[type='email'],
+.query-content form textarea {
+  display: block;
+  width: 100%;
+  border: 0;
+  outline: 0;
+  padding: 12px 12px;
+  margin: 1.1rem 0;
+  border-radius: 3px;
+}
+
+.query-content form textarea {
+  resize: none;
+}
+.query-content .btn {
+  margin-top: 5px;
+}
+
+.booking-content {
+  text-align: center;
+}
+
+.booking-content h3 {
+  font-size: 28px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.booking-content p {
+  line-height: 30px;
+  color: #4b4f56;
+  padding: 1.5rem 0 0;
+}
+
+.btn.booking {
+  margin-top: 0.8rem;
 }
 
 /* Footer */
