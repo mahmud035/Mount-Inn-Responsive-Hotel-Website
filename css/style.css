@@ -304,7 +304,9 @@ header .header-content {
 
 .luxury-summer-container {
   padding: 7rem 0;
-  height: 420px;
+  height: fit-content;
+  /* INFO: Don't set the height to any section, container directly. Instead use padding & height: fit-content simultaneously. It's a better practice. */
+
   background-image: url('../images/bg-2.jpg');
   /* INFO: Image dimensions is so big: 4853*3235. So there is no need of (no-repeat) */
   background-position: center center;
@@ -779,11 +781,6 @@ footer {
     font-size: 12px;
     font-weight: normal;
     letter-spacing: 1.2px;
-  }
-
-  /** Luxury Summer section*/
-  .luxury-summer-container {
-    height: 480px;
   }
 }
 
