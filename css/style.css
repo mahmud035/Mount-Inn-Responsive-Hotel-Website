@@ -722,12 +722,22 @@ footer {
     text-align: center;
   }
 
+  .package-img img {
+    width: 480px;
+  }
+
   .package-content {
     padding: 2rem 0;
   }
 
+  .package-content p {
+    padding: 1.5rem 10px;
+  }
+
   .package-content .package-icons {
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 
