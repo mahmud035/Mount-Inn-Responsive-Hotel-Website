@@ -516,7 +516,7 @@ footer {
 }
 
 .footer-section-container {
-  height: 200px;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -743,6 +743,21 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  /** Footer */
+  .footer-logo {
+    flex-direction: column;
+  }
+
+  .contact-info {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .copyright {
+    flex-direction: column;
+    gap: 1.5rem;
   }
 }
 
