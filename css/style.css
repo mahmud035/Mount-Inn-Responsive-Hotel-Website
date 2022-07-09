@@ -339,7 +339,7 @@ header .header-content {
 .summer-text p {
   padding: 2rem 0;
   line-height: 30px;
-  max-width: 90%;
+  max-width: 97%;
 }
 
 /* Gallery */
@@ -541,7 +541,95 @@ footer {
 }
 
 /* Media Query */
+
+@media (max-width: 1335px) {
+  /* About Us */
+  .about-text h3 {
+    font-size: 24px;
+    padding-bottom: 12px;
+  }
+
+  .about-text .para1 {
+    padding: 1rem 0 1rem;
+    line-height: 25px;
+  }
+
+  .about-text .para2 {
+    line-height: 28px;
+  }
+
+  /* luxury summer section */
+  .summer-text h2 {
+    font-size: 2rem;
+  }
+
+  .summer-text p {
+    padding: 2rem 0;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 1260px) {
+  /* Header */
+  .header-content h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 1240px) {
+  /* About */
+  .about-text h3 {
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+
+  .about-text .para1 {
+    padding: 1rem 0 1rem;
+    line-height: 25px;
+  }
+
+  .about-text .para2 {
+    line-height: 28px;
+  }
+}
+
+@media (max-width: 1200px) {
+  /* About */
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1150px) {
+  /* Header  */
+  .header-content h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 1080px) {
+  /* Luxury Summer section */
+  .summer-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .summer-text p {
+    padding: 1.3rem 0;
+  }
+}
+
+@media (max-width: 1035px) {
+  /* Header */
+  .header-content p {
+    font-size: 17px;
+    padding: 1.5rem 0;
+    margin-bottom: 1.5rem;
+  }
+}
+
 @media (max-width: 992px) {
+  /* Navigation */
   .toggle-button {
     display: flex;
   }
@@ -575,68 +663,25 @@ footer {
   .navbar .brand-title {
     max-width: 150px;
   }
-}
 
-@media (max-width: 1330px) {
-  .about-text h3 {
-    font-size: 24px;
-    padding-bottom: 12px;
-  }
-
-  .about-text .para1 {
-    padding: 1rem 0 1rem;
-    line-height: 25px;
-  }
-
-  .about-text .para2 {
-    line-height: 28px;
-  }
-}
-
-@media (max-width: 1260px) {
-  .header-content h1 {
-    font-size: 4rem;
-  }
-}
-
-@media (max-width: 1150px) {
-  .header-content h1 {
-    font-size: 3rem;
-  }
-}
-
-@media (max-width: 1240px) {
-  .about-text h3 {
-    font-size: 20px;
-    padding-bottom: 10px;
-  }
-
-  .about-text .para1 {
-    padding: 1rem 0 1rem;
-    line-height: 25px;
-  }
-
-  .about-text .para2 {
-    line-height: 28px;
-  }
-}
-
-@media (max-width: 1200px) {
-  .about-content {
+  /* Luxury Summer section */
+  .summer-content {
     flex-direction: column;
     text-align: center;
+    gap: 1.5rem;
   }
-}
 
-@media (max-width: 1035px) {
-  .header-content p {
-    font-size: 17px;
-    padding: 1.5rem 0;
-    margin-bottom: 1.5rem;
+  .summer-text {
+    flex: 1;
+  }
+
+  .summer-text p {
+    width: 100%;
   }
 }
 
 @media (max-width: 768px) {
+  /* Header */
   .header-content h1 {
     font-size: 2.5rem;
   }
@@ -649,12 +694,19 @@ footer {
 }
 
 @media (max-width: 630px) {
+  /* Header */
   .header-content h1 {
     font-size: 2rem;
+  }
+
+  /* luxury summer section */
+  .summer-text h2 {
+    font-size: 1.5rem;
   }
 }
 
 @media (max-width: 505px) {
+  /* Header */
   .header-content h1 {
     font-size: 1.5rem;
   }
@@ -672,9 +724,15 @@ footer {
     font-weight: normal;
     letter-spacing: 1.2px;
   }
+
+  /* Luxury Summer section*/
+  .luxury-summer-container {
+    height: 480px;
+  }
 }
 
 @media (max-width: 405px) {
+  /* Header */
   .header-content h1 {
     font-size: 1.1rem;
   }
