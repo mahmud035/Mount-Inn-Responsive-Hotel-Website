@@ -193,7 +193,7 @@ header .header-content {
 
 /* About Us */
 .about-section-container {
-  padding: 6rem 0;
+  padding: 6rem 0 5rem;
 }
 
 .about-content {
@@ -208,7 +208,8 @@ header .header-content {
 }
 
 .about-img img {
-  max-width: 600px;
+  /* max-width: 600px; */
+  /* INFO: No need to define max-width with absolute value. Above of this file image max-width is define with relative units 100% */
   height: auto;
   border-radius: 8px;
   transition: 0.3s ease;
@@ -238,7 +239,7 @@ header .header-content {
 
 /* Amenities */
 .amenities-section-container {
-  padding: 6rem 0;
+  padding: 4rem 0;
 }
 
 .icon-container {
@@ -576,6 +577,22 @@ footer {
   }
 }
 
+@media (max-width: 1330px) {
+  .about-text h3 {
+    font-size: 24px;
+    padding-bottom: 12px;
+  }
+
+  .about-text .para1 {
+    padding: 1rem 0 1rem;
+    line-height: 25px;
+  }
+
+  .about-text .para2 {
+    line-height: 28px;
+  }
+}
+
 @media (max-width: 1260px) {
   .header-content h1 {
     font-size: 4rem;
@@ -585,6 +602,29 @@ footer {
 @media (max-width: 1150px) {
   .header-content h1 {
     font-size: 3rem;
+  }
+}
+
+@media (max-width: 1240px) {
+  .about-text h3 {
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+
+  .about-text .para1 {
+    padding: 1rem 0 1rem;
+    line-height: 25px;
+  }
+
+  .about-text .para2 {
+    line-height: 28px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
   }
 }
 
