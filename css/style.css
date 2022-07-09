@@ -684,6 +684,11 @@ footer {
   .summer-text p {
     width: 100%;
   }
+
+  /** Query & Booking section */
+  .query-booking-section-container {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 768px) {
